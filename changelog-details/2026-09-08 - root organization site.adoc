@@ -10,5 +10,7 @@ The root site aggregates that component at `/docs/`.
 
 The visual shell now uses an unclipped responsive container, conventional
 navigation, a restrained brand treatment, and a system UI sans-serif stack.
+The documentation overlay also provides explicit light and dark surfaces,
+readable navigation, and accessible code-block contrast.
 Static generation also emits root-relative feeds, `sitemap.xml`, and
 `robots.txt`.
