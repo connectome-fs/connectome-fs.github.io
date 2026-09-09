@@ -45,7 +45,7 @@ jobs:
           test -s .output/public/robots.txt
           grep -q "connectome-fs" .output/public/index.html
           grep -q "https://connectome-fs.github.io/" .output/public/sitemap.xml
-          ! grep -R "connectome-fs.github.io/connectome-fs" .output/public
+          ! grep -RFq "connectome-fs.github.io/connectome-fs" .output/public
 
       - uses: actions/upload-pages-artifact@v3
         with:
