@@ -1,0 +1,35 @@
+{
+  "name": "connectome-fs-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content:build": "node scripts/build-content.mjs",
+    "docs:build": "antora --fetch antora-playbook.yml",
+    "predev": "node scripts/build-content.mjs",
+    "prebuild": "node scripts/build-content.mjs",
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
+  },
+  "dependencies": {
+    "@dev-centr/themed-svg": "0.1.1",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.16.2",
+    "@solidjs/start": "^1.3.2",
+    "solid-js": "^1.9.14",
+    "vinxi": "^0.5.11"
+  },
+  "devDependencies": {
+    "@antora/cli": "^3.2.0",
+    "@antora/lunr-extension": "^1.0.0-alpha.13",
+    "@antora/site-generator": "^3.2.0",
+    "@antora-supplemental/build-stack": "github:antora-supplemental/build-stack#main",
+    "@asciidoctor/core": "^4.0.5",
+    "typescript": "^5.8.2",
+    "vite-plugin-solid": "^2.11.6"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@9.15.4"
+}

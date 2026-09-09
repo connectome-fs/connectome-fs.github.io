@@ -1,0 +1,10 @@
+= Changelog
+
+== 2026-09-08 — Root organization site
+
+Details: link:changelog-details/2026-09-08 - root organization site.adoc[2026-09-08 - root organization site]
+
+* Established `connectome-fs.github.io` as the source and deployment repository for the organization root site
+* Moved organization news, blog, roadmap, and the Antora documentation hub out of the core product repository
+* Replaced the clipped Signal Field layout and display fonts with a restrained responsive layout and system sans-serif typography
+* Added root-relative feeds, sitemap, robots policy, and deployment checks for crawlable static HTML

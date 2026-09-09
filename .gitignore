@@ -1,0 +1,36 @@
+# Allow-list: ignore everything by default.
+*
+!.gitignore
+!.github/
+!.github/**
+!AGENTS.md
+!CHANGELOG.adoc
+!LICENSE
+!README.md
+!antora-playbook.yml
+!app.config.ts
+!content/
+!content/**
+!package.json
+!pnpm-lock.yaml
+!public/
+!public/**
+!scripts/
+!scripts/**
+!src/
+!src/**
+!supplemental-ui/
+!supplemental-ui/**
+!tsconfig.json
+!changelog-details/
+!changelog-details/**
+
+# Generated and local build artifacts.
+node_modules/
+.output/
+.vinxi/
+.solid/
+public/docs/
+**/*.raw.svg
+**/.DS_Store
+**/Thumbs.db

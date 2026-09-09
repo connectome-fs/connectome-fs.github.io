@@ -1,0 +1,14 @@
+= Root organization site
+:revdate: 2026-09-08
+
+The organization website now publishes from the GitHub Pages root repository
+instead of from the `/connectome-fs/` project subpath.
+
+The migration separates public organization content from the core filesystem
+implementation while keeping the product's Antora component near its source.
+The root site aggregates that component at `/docs/`.
+
+The visual shell now uses an unclipped responsive container, conventional
+navigation, a restrained brand treatment, and a system UI sans-serif stack.
+Static generation also emits root-relative feeds, `sitemap.xml`, and
+`robots.txt`.
