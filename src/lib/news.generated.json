@@ -10,7 +10,7 @@
       "semantic-units",
       "unison"
     ],
-    "html": "<h1>Features are not files</h1>\n<div class=\"paragraph\">\n<p>Git stores blobs and trees.\nDevelopers edit features, fixes, and dependency edges that cut across files — and sometimes share a file with unrelated neighbors.</p>\n</div>\n<div class=\"paragraph\">\n<p>We published the design essay <a href=\"../docs/connectome-fs/0.1/explanation/semantic-change-units/\">Semantic change units</a> (Antora docs on this site) and a practitioner framing on Dev-Centr.</p>\n</div>",
+    "html": "<h1>Features are not files</h1>\n<div class=\"paragraph\">\n<p>Git stores blobs and trees.\nDevelopers edit features, fixes, and dependency edges that cut across files — and sometimes share a file with unrelated neighbors.</p>\n</div>\n<div class=\"paragraph\">\n<p>We published the design essay <a href=\"https://connectome-fs.github.io/docs/connectome-fs/0.1/explanation/semantic-change-units/\">Semantic change units</a> (Antora docs hub) and a practitioner framing on Dev-Centr.</p>\n</div>",
     "kind": "news"
   },
   {

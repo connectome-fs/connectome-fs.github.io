@@ -1,5 +1,12 @@
 = Changelog
 
+== 2026-09-09 — Docs hub ownership moved
+
+Details: link:changelog-details/2026-09-09 - docs hub ownership.adoc[2026-09-09 - docs hub ownership]
+
+* Removed embedded Antora (`docs:build`, playbook, supplemental-ui, `public/docs`) from this website
+* Documentation now lives only at `https://connectome-fs.github.io/docs/` from `connectome-fs/docs`
+
 == 2026-09-08 — Root organization site
 
 Details: link:changelog-details/2026-09-08 - root organization site.adoc[2026-09-08 - root organization site]

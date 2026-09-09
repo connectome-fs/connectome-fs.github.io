@@ -30,9 +30,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build documentation
-        run: pnpm docs:build
-
       - name: Build site
         run: pnpm build
 
@@ -40,11 +37,11 @@ jobs:
         shell: bash
         run: |
           test -s .output/public/index.html
-          test -s .output/public/docs/index.html
           test -s .output/public/sitemap.xml
           test -s .output/public/robots.txt
           grep -q "connectome-fs" .output/public/index.html
           grep -q "https://connectome-fs.github.io/" .output/public/sitemap.xml
+          ! test -d .output/public/docs
           ! grep -RFq "https://connectome-fs.github.io/connectome-fs/" .output/public
 
       - uses: actions/upload-pages-artifact@v3

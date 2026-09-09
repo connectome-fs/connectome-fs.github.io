@@ -4,7 +4,6 @@
   "type": "module",
   "scripts": {
     "content:build": "node scripts/build-content.mjs",
-    "docs:build": "antora --fetch antora-playbook.yml",
     "predev": "node scripts/build-content.mjs",
     "prebuild": "node scripts/build-content.mjs",
     "dev": "vinxi dev",
@@ -20,10 +19,6 @@
     "vinxi": "^0.5.11"
   },
   "devDependencies": {
-    "@antora/cli": "^3.2.0",
-    "@antora/lunr-extension": "^1.0.0-alpha.13",
-    "@antora/site-generator": "^3.2.0",
-    "@antora-supplemental/build-stack": "github:antora-supplemental/build-stack#main",
     "@asciidoctor/core": "^4.0.5",
     "typescript": "^5.8.2",
     "vite-plugin-solid": "^2.11.6"

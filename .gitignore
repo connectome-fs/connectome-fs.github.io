@@ -7,7 +7,6 @@
 !CHANGELOG.adoc
 !LICENSE
 !README.md
-!antora-playbook.yml
 !app.config.ts
 !content/
 !content/**
@@ -19,8 +18,6 @@
 !scripts/**
 !src/
 !src/**
-!supplemental-ui/
-!supplemental-ui/**
 !tsconfig.json
 !changelog-details/
 !changelog-details/**
@@ -30,7 +27,6 @@ node_modules/
 .output/
 .vinxi/
 .solid/
-public/docs/
 **/*.raw.svg
 **/.DS_Store
 **/Thumbs.db

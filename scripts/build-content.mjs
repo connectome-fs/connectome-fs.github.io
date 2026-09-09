@@ -121,14 +121,17 @@ function writeDiscovery(news, blog) {
     "about/",
     "blog/",
     ...blog.map((post) => `blog/${post.slug}/`),
-    "docs/",
     "news/",
     ...news.map((post) => `news/${post.slug}/`),
     "roadmap/",
   ];
-  const urls = routes
-    .map((route) => `  <url><loc>${siteUrl}/${route}</loc></url>`)
-    .join("\n");
+  // Docs hub is a separate GitHub Pages project site — list it absolutely so
+  // crawlers discover it without this SolidStart build prerendering /docs/.
+  const absoluteExtra = [`${siteUrl}/docs/`];
+  const urls = [
+    ...routes.map((route) => `  <url><loc>${siteUrl}/${route}</loc></url>`),
+    ...absoluteExtra.map((loc) => `  <url><loc>${loc}</loc></url>`),
+  ].join("\n");
   writeFileSync(
     join(staticDir, "sitemap.xml"),
     `<?xml version="1.0" encoding="UTF-8"?>

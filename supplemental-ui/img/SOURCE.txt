@@ -1,2 +1,0 @@
-﻿Canonical brand source: connectome-fs/.github profile/assets/brand/neuronal-2026-09/logo-mark.svg
-Copied un-backgrounded mark into logo.svg for Antora header_logo (no field tile).

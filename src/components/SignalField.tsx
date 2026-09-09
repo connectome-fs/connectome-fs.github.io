@@ -26,7 +26,7 @@ export const SignalField: Component = () => {
             and sharded search—with hierarchy kept as a familiar navigation view.
           </p>
           <div class="hero__actions">
-            <a class="btn btn-primary" href="/docs/">
+            <a class="btn btn-primary" href="https://connectome-fs.github.io/docs/">
               Read the docs
             </a>
             <A class="btn btn-ghost" href="/roadmap">

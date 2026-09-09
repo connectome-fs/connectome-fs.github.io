@@ -1,0 +1,11 @@
+= Docs hub ownership moved
+:description: Website no longer builds or publishes Antora.
+
+The organization website previously built Antora into `public/docs/` and published it beside the SolidStart site.
+That duplicated ownership with the dedicated docs hub.
+
+Cutover:
+
+* `connectome-fs/docs` owns the single public Antora site at `https://connectome-fs.github.io/docs/`
+* This repository keeps marketing links to `/docs/` but does not run Antora
+* Removed `docs:build`, `antora-playbook.yml`, and `supplemental-ui/`

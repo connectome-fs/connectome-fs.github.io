@@ -52,7 +52,7 @@ export const SiteChrome: ParentComponent = (props) => {
             <A href="/about" aria-current={current("/about")}>
               About
             </A>
-            <a href="/docs/">Docs</a>
+            <a href="https://connectome-fs.github.io/docs/">Docs</a>
             <a href="https://github.com/connectome-fs/connectome-fs">GitHub</a>
             <ThemeToggle />
           </nav>

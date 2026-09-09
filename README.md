@@ -4,7 +4,7 @@
   <a href="https://github.com/connectome-fs/connectome-fs.github.io/blob/main/LICENSE"><img src="https://img.shields.io/github/license/connectome-fs/connectome-fs.github.io.svg?style=for-the-badge" alt="License"></a>
 
   <h1>connectome-fs website</h1>
-  <p>Organization site, news, design notes, roadmap, and documentation hub.</p>
+  <p>Organization site, news, design notes, and roadmap.</p>
   <p>
     <a href="https://connectome-fs.github.io/"><strong>Visit the site »</strong></a>
     <br />
@@ -18,14 +18,14 @@
 
 This repository publishes the root organization site at
 `https://connectome-fs.github.io/`. The SolidStart site owns organization-level
-content; Antora aggregates the component documentation maintained with the
-core project.
+content. Product documentation is published by
+[`connectome-fs/docs`](https://github.com/connectome-fs/docs) at
+`https://connectome-fs.github.io/docs/`.
 
 ## Development
 
 ```powershell
 pnpm install
-pnpm docs:build
 pnpm dev
 ```
 

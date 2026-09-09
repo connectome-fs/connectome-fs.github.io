@@ -6,4 +6,4 @@
 Git stores blobs and trees.
 Developers edit features, fixes, and dependency edges that cut across files — and sometimes share a file with unrelated neighbors.
 
-We published the design essay link:../docs/connectome-fs/0.1/explanation/semantic-change-units/[Semantic change units] (Antora docs on this site) and a practitioner framing on Dev-Centr.
+We published the design essay link:https://connectome-fs.github.io/docs/connectome-fs/0.1/explanation/semantic-change-units/[Semantic change units] (Antora docs hub) and a practitioner framing on Dev-Centr.
