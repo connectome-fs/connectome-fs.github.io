@@ -31,7 +31,7 @@ export const SiteChrome: ParentComponent = (props) => {
           <A href="/" class="nav-mark" aria-current={current("/")}>
             <img
               class="nav-mark__logo"
-              src="/brand/logo.svg"
+              src="/brand/logo-mark.svg"
               width={28}
               height={28}
               alt=""

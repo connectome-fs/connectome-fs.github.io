@@ -4,3 +4,5 @@ source_logo=logo.svg
 source_mark=logo-mark.svg
 source_favicon=favicon.svg
 exported=2026-09-08
+site_chrome=logo-mark.svg
+site_note=Live website chrome and hero use logo-mark.svg (no field tile). logo.svg retains the backgrounded plate for avatars and app tiles.

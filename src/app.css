@@ -144,7 +144,6 @@ h3 {
 .nav-mark__logo {
   width: 2rem;
   height: 2rem;
-  border-radius: 0.5rem;
 }
 
 .nav {
@@ -189,8 +188,6 @@ h3 {
   width: clamp(4.75rem, 10vw, 7rem);
   height: auto;
   margin-top: 0.35rem;
-  border-radius: 1.25rem;
-  box-shadow: var(--shadow);
 }
 
 .hero__copy {

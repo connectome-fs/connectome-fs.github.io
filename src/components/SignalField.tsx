@@ -8,7 +8,7 @@ export const SignalField: Component = () => {
       <div class="wrap hero__inner">
         <img
           class="hero__logo"
-          src="/brand/logo.svg"
+          src="/brand/logo-mark.svg"
           width={88}
           height={88}
           alt=""
