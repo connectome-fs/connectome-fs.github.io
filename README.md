@@ -37,4 +37,4 @@ See [CHANGELOG.adoc](CHANGELOG.adoc) and [changelog-details/](changelog-details/
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+See [LICENSE](LICENSE).
