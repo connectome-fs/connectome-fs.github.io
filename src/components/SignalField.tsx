@@ -19,7 +19,7 @@ export const SignalField: Component = () => {
           <h1 id="hero-title">connectome-fs</h1>
           <p class="hero__summary">
             Store and find files the way your brain does. Make connections,
-            not paths you have to memorize.
+            not folders.
           </p>
           <p class="hero__detail">
             GUID-addressed nodes, multiple names, typed associations, editions,

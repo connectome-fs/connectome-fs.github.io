@@ -13,7 +13,7 @@ const PARTNERS = [
 ] as const;
 
 const VISION =
-  "Store and find files the way your brain does. Make connections, don't memorize paths.";
+  "Store and find files the way your brain does. Make connections, not folders.";
 
 export const SiteChrome: ParentComponent = (props) => {
   const location = useLocation();
