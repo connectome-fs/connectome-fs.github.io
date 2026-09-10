@@ -4,9 +4,6 @@
     <loc>https://connectome-fs.github.io/sitemap-site.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://connectome-fs.github.io/connectome-fs/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://connectome-fs.github.io/connectome-fs/docs/sitemap.xml</loc>
+    <loc>https://connectome-fs.github.io/docs/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>

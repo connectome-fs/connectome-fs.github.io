@@ -140,10 +140,7 @@ ${urls}
 </urlset>
 `,
   );
-  const projectSitemaps = [
-    `${siteUrl}/connectome-fs/sitemap.xml`,
-    `${siteUrl}/connectome-fs/docs/sitemap.xml`,
-  ];
+  const childSitemaps = [`${siteUrl}/docs/sitemap.xml`];
   writeFileSync(
     join(staticDir, "sitemap.xml"),
     `<?xml version="1.0" encoding="UTF-8"?>
@@ -151,7 +148,7 @@ ${urls}
   <sitemap>
     <loc>${siteUrl}/sitemap-site.xml</loc>
   </sitemap>
-${projectSitemaps
+${childSitemaps
   .map(
     (loc) => `  <sitemap>
     <loc>${loc}</loc>
@@ -167,7 +164,7 @@ ${projectSitemaps
 Allow: /
 
 Sitemap: ${siteUrl}/sitemap.xml
-${projectSitemaps.map((loc) => `Sitemap: ${loc}`).join("\n")}
+Sitemap: ${siteUrl}/docs/sitemap.xml
 `,
   );
 }

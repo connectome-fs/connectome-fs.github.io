@@ -1,0 +1,11 @@
+= Fix host sitemap paths
+:description: Drop dead /connectome-fs/ sitemap URLs; advertise the live /docs/ hub instead.
+
+The earlier host-wide sitemap pass pointed robots and the sitemap index at
+`/connectome-fs/sitemap.xml` and `/connectome-fs/docs/sitemap.xml`, which 404.
+Docs live at `https://connectome-fs.github.io/docs/` after the hub ownership move.
+
+Changes:
+
+* `robots.txt` and the root sitemap index now reference `/docs/sitemap.xml` only for the docs child
+* Removed inventing `/connectome-fs/` project-path sitemaps from `scripts/build-content.mjs`
