@@ -38,11 +38,15 @@ jobs:
         run: |
           test -s .output/public/index.html
           test -s .output/public/sitemap.xml
+          test -s .output/public/sitemap-site.xml
           test -s .output/public/robots.txt
           grep -q "connectome-fs" .output/public/index.html
-          grep -q "https://connectome-fs.github.io/" .output/public/sitemap.xml
+          grep -q "https://connectome-fs.github.io/sitemap-site.xml" .output/public/sitemap.xml
+          grep -Fq "Sitemap: https://connectome-fs.github.io/connectome-fs/sitemap.xml" .output/public/robots.txt
+          grep -Fq "Sitemap: https://connectome-fs.github.io/connectome-fs/docs/sitemap.xml" .output/public/robots.txt
           ! test -d .output/public/docs
-          ! grep -RFq "https://connectome-fs.github.io/connectome-fs/" .output/public
+          # Marketing HTML must not deep-link the project Pages path; robots/sitemaps may advertise it.
+          ! grep -RFq "https://connectome-fs.github.io/connectome-fs/" .output/public --include='*.html'
 
       - uses: actions/upload-pages-artifact@v3
         with:

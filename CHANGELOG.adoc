@@ -6,6 +6,7 @@ Details: link:changelog-details/2026-09-10 - host-wide project sitemaps.adoc[202
 
 * Extended root `robots.txt` with `Sitemap:` lines for project Pages under this host
 * Converted root `sitemap.xml` into a sitemap index that points at the org-site urlset plus project sitemaps
+* Updated the Pages deploy crawl check so discovery files may advertise project sitemaps while HTML still must not deep-link `/connectome-fs/`
 
 == 2026-09-09 — Docs hub ownership moved
 
