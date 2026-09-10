@@ -1,5 +1,12 @@
 = Changelog
 
+== 2026-09-10 — Host-wide project sitemaps
+
+Details: link:changelog-details/2026-09-10 - host-wide project sitemaps.adoc[2026-09-10 - host-wide project sitemaps]
+
+* Extended root `robots.txt` with `Sitemap:` lines for project Pages under this host
+* Converted root `sitemap.xml` into a sitemap index that points at the org-site urlset plus project sitemaps
+
 == 2026-09-09 — Docs hub ownership moved
 
 Details: link:changelog-details/2026-09-09 - docs hub ownership.adoc[2026-09-09 - docs hub ownership]

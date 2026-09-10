@@ -1,0 +1,12 @@
+= Host-wide project sitemaps
+:description: Root robots and sitemap index advertise project Pages on this host.
+
+The organization root already published a site `robots.txt` and a urlset for marketing pages.
+Crawlers looking at the host root also need pointers to project Pages that live under the same hostname.
+
+Changes:
+
+* `public/robots.txt` now lists the root sitemap index plus `connectome-fs` and `connectome-fs/docs` project sitemaps
+* `public/sitemap-site.xml` keeps the previous org-site urlset
+* `public/sitemap.xml` is now a sitemap index that references the org-site urlset and those project sitemaps
+* `scripts/build-content.mjs` emits the same discovery layout on content rebuilds

@@ -133,11 +133,32 @@ function writeDiscovery(news, blog) {
     ...absoluteExtra.map((loc) => `  <url><loc>${loc}</loc></url>`),
   ].join("\n");
   writeFileSync(
-    join(staticDir, "sitemap.xml"),
+    join(staticDir, "sitemap-site.xml"),
     `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls}
 </urlset>
+`,
+  );
+  const projectSitemaps = [
+    `${siteUrl}/connectome-fs/sitemap.xml`,
+    `${siteUrl}/connectome-fs/docs/sitemap.xml`,
+  ];
+  writeFileSync(
+    join(staticDir, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${siteUrl}/sitemap-site.xml</loc>
+  </sitemap>
+${projectSitemaps
+  .map(
+    (loc) => `  <sitemap>
+    <loc>${loc}</loc>
+  </sitemap>`,
+  )
+  .join("\n")}
+</sitemapindex>
 `,
   );
   writeFileSync(
@@ -146,6 +167,7 @@ ${urls}
 Allow: /
 
 Sitemap: ${siteUrl}/sitemap.xml
+${projectSitemaps.map((loc) => `Sitemap: ${loc}`).join("\n")}
 `,
   );
 }

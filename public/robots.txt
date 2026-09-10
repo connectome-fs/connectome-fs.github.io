@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://connectome-fs.github.io/sitemap.xml
+Sitemap: https://connectome-fs.github.io/connectome-fs/sitemap.xml
+Sitemap: https://connectome-fs.github.io/connectome-fs/docs/sitemap.xml
