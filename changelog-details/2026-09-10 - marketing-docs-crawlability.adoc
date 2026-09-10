@@ -1,0 +1,5 @@
+﻿= 2026-09-10 — Marketing sitemap + docs robots
+
+* Generate the root marketing sitemap from AsciiDoc news/blog plus the static prerender route list shared with `app.config.ts`.
+* Point `robots.txt` at both `https://connectome-fs.github.io/sitemap.xml` and `https://connectome-fs.github.io/docs/sitemap.xml`.
+* Drop the interim sitemap index / project-pages sitemap paths from discovery output.

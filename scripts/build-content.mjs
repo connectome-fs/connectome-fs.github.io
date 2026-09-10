@@ -116,46 +116,23 @@ ${news
 }
 
 function writeDiscovery(news, blog) {
+  // Keep static paths in sync with PRERENDER_ROUTES in app.config.ts
+  const staticRoutes = ["", "about/", "blog/", "news/", "roadmap/"];
   const routes = [
-    "",
-    "about/",
-    "blog/",
+    ...staticRoutes,
     ...blog.map((post) => `blog/${post.slug}/`),
-    "news/",
     ...news.map((post) => `news/${post.slug}/`),
-    "roadmap/",
   ];
-  // Docs hub is a separate GitHub Pages project site — list it absolutely so
-  // crawlers discover it without this SolidStart build prerendering /docs/.
-  const absoluteExtra = [`${siteUrl}/docs/`];
-  const urls = [
-    ...routes.map((route) => `  <url><loc>${siteUrl}/${route}</loc></url>`),
-    ...absoluteExtra.map((loc) => `  <url><loc>${loc}</loc></url>`),
-  ].join("\n");
+  const urls = routes
+    .map((route) => `  <url><loc>${siteUrl}/${route}</loc></url>`)
+    .join("\n");
+  // Marketing routes only — Antora docs publish their own sitemap under /docs/
   writeFileSync(
-    join(staticDir, "sitemap-site.xml"),
+    join(staticDir, "sitemap.xml"),
     `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls}
 </urlset>
-`,
-  );
-  const childSitemaps = [`${siteUrl}/docs/sitemap.xml`];
-  writeFileSync(
-    join(staticDir, "sitemap.xml"),
-    `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${siteUrl}/sitemap-site.xml</loc>
-  </sitemap>
-${childSitemaps
-  .map(
-    (loc) => `  <sitemap>
-    <loc>${loc}</loc>
-  </sitemap>`,
-  )
-  .join("\n")}
-</sitemapindex>
 `,
   );
   writeFileSync(
