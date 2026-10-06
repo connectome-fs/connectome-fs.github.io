@@ -30,3 +30,5 @@ node_modules/
 **/*.raw.svg
 **/.DS_Store
 **/Thumbs.db
+!/.editorconfig
+!/.gitattributes
